@@ -7,12 +7,12 @@ class Footer extends HTMLElement {
       this.innerHTML = `
         <style>
             footer {
-                height: 120px;
+                height: 200px;
                 padding: 0 10px;
                 display: flex;
                 justify-content: center; /* Center the ul element */
                 align-items: center;
-                background-color: #dfdfe2;
+                background-color: #ddd8ce;
             }
 
             ul li {
@@ -42,9 +42,9 @@ class Footer extends HTMLElement {
 
             .social-row li a {
                 color: #333;
-                size: 30px;
+                font-size: 30px;
                 padding: 0 10px;
-                scale: 1.5;
+                scale: 3.5;
             }
             </style>
 
