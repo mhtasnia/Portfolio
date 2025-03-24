@@ -26,3 +26,7 @@ The skill slider component in this portfolio provides an automated and dynamic v
 I've developed it using array and iteration of loops
 
 
+## 🚀 Live Demo
+
+You can view the live demo of my portfolio here: [https://portfolio-git-main-meherose-hossains-projects.vercel.app](https://portfolio-git-main-meherose-hossains-projects.vercel.app)
+
