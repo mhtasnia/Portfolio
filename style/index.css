@@ -1,4 +1,3 @@
-/* Base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -90,6 +89,8 @@ body {
   }
 }
 
+
+
 /* About Me section */
 .about-me {
   display: flex;
@@ -141,6 +142,8 @@ hr {
   margin: 20px 0;
 }
 
+
+
 /* Fix the table layout */
 .info-row {
   display: grid;
@@ -157,6 +160,8 @@ hr {
 .info-value {
   color: white;
 }
+
+
 
 /* Enhanced CV Button Styles */
 .cv-button-container {
@@ -214,6 +219,8 @@ hr {
   transform: translateY(-2px);
 }
 
+
+
 /* Responsive styles for CV button */
 @media screen and (max-width: 576px) {
   .cv-button-container {
@@ -226,6 +233,8 @@ hr {
     font-size: 1rem;
   }
 }
+
+
 
 /* Tech Stack section */
 .tech-stack {
@@ -258,6 +267,7 @@ hr {
   border: none;
   border-radius: 3px;
 }
+
 
 /* Tech Stack Slider */
 .tech-stack-slider {
@@ -308,6 +318,9 @@ hr {
   text-align: center;
 }
 
+
+
+/*To make website responsive*/
 /* Responsive styles */
 @media screen and (max-width: 1200px) {
   .slider-item,
@@ -474,6 +487,8 @@ hr {
     box-shadow: #62aeb0;
   }
 }
+
+
 
 /* Projects Section */
 .projects-section {
