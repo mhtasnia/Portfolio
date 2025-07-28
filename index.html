@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="components/Header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="scripts/main.js" type="text/javascript" defer></script>
+    <script src="components/Header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="scripts/main.js" defer></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -24,12 +24,18 @@
             <br>
             </div>
             <div class="banner-subtext"><span class="designation">Web Developer</span></div>
+            <div class="banner-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </div>
 
     <section class="about-me" id="about">
         <div class="text-container">
           <h2>About Me</h2>
+          <div class="about-image-container">
+            <img src="./images/Home.png" alt="Meherose Hossain Tasnia" class="about-image">
+          </div>
           <h1>I am a software Engineering Student</h1>
           <p>I have a Strong foundation of Machine Learning. I have also done competitive programming, web development, database management and robotics project. I am a firm believer in continuous learning. I always like to explore new technologies. 
           </p>
@@ -63,6 +69,32 @@
           </div>
           
           <!-- View CV Button Here -->
+          <div class="interests-skills-grid">
+            <div class="interest-skill-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Innovative Thinking</span>
+            </div>
+            <div class="interest-skill-item">
+              <i class="fas fa-users"></i>
+              <span>Teamwork</span>
+            </div>
+            <div class="interest-skill-item">
+              <i class="fas fa-comments"></i>
+              <span>Communication</span>
+            </div>
+            <div class="interest-skill-item">
+              <i class="fas fa-cogs"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="interest-skill-item">
+              <i class="fas fa-book"></i>
+              <span>Continuous Learning</span>
+            </div>
+            <div class="interest-skill-item">
+              <i class="fas fa-handshake"></i>
+              <span>Adaptability</span>
+            </div>
+          </div>
           <div class="cv-button-container">
             <a href="./documents/Cv_v2.pdf" class="cv-button" target="_blank" rel="noopener">
               <i class="fas fa-file-download"></i>
@@ -109,9 +141,11 @@
           <img src="./images/ISO_C++_Logo.svg.png" alt="C++">
           <p>C++</p>
         </div>
-        <div class="slider-item">
+        <div class="slider-item" data-level="intermediate">
           <img src="./images/Java_programming_language_logo.svg.png" alt="JAVA">
           <p>Java</p>
+          <div class="skill-level-indicator"></div>
+          <div class="tooltip">Familiar with building robust backend services and Android development.</div>
         </div>
       </div>
     </div>
@@ -123,25 +157,35 @@
     <div class="tech-stack-slider">
       <div class="frameworks-slider">
         <div class="slider-items-frameworks">
-          <div class="slider-item-frameworks">
+          <div class="slider-item-frameworks" data-level="advanced">
             <img src="./images/react-icon_svg_.webp" alt="React">
             <p>React</p>
+            <div class="skill-level-indicator"></div>
+            <div class="tooltip">Proficient in building dynamic and responsive user interfaces.</div>
           </div>
-          <div class="slider-item-frameworks">
+          <div class="slider-item-frameworks" data-level="expert">
             <img src="./images/bootstrap.jpeg" alt="bootstrap">
             <p>Bootstrap</p>
+            <div class="skill-level-indicator"></div>
+            <div class="tooltip">Extensive experience in rapid prototyping and responsive design.</div>
           </div>
-          <div class="slider-item-frameworks">
+          <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/springboot.png" alt="springboot">
             <p>Springboot</p>
+            <div class="skill-level-indicator"></div>
+            <div class="tooltip">Familiar with building robust backend services and APIs.</div>
           </div>
-          <div class="slider-item-frameworks">
+          <div class="slider-item-frameworks" data-level="advanced">
             <img src="./images/django.png" alt="Django">
             <p>Django</p>
+            <div class="skill-level-indicator"></div>
+            <div class="tooltip">Skilled in rapid web development with Python.</div>
           </div>
-          <div class="slider-item-frameworks">
+          <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/tailwind.png" alt="tailwind">
             <p>Tailwind</p>
+            <div class="skill-level-indicator"></div>
+            <div class="tooltip">Proficient in utility-first CSS for efficient styling.</div>
           </div>
         </div>
       </div>
@@ -157,9 +201,15 @@
       <p>Below you can see some of my recent projects</p>
     </div>
     
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="game">Game Development</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+    </div>
     <div class="projects-grid">
       <!-- Project 1 -->
-      <div class="project-card">
+      <div class="project-card" data-category="web">
         <div class="project-image">
           <img src="./images/borrow.png" alt="Project 1">
           <div class="project-overlay">
@@ -170,12 +220,12 @@
         <div class="project-info">
           <h3>Borrow&Read</h3>
           <p>Borrow & Read is a web application designed to facilitate book rentals between users and partnering libraries.I developed this system in 2nd year of my bachelors program.</p>
-          <a href=" https://github.com/mhtasnia/Borrow-Read" target="_blank" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/mhtasnia/Borrow-Read" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       
       <!-- Project 2 -->
-      <div class="project-card">
+      <div class="project-card" data-category="web">
         <div class="project-image">
           <img src="./images/bus managementpng.png" alt="Project 2">
           <div class="project-overlay">
@@ -186,12 +236,12 @@
         <div class="project-info">
           <h3>Bus Management</h3>
           <p>I developed this system in the 1st year of my bachelors program. Bus Management System is a comprehensive solution aimed at modernizing university transportation services. </p>
-          <a href="https://github.com/mhtasnia/University-Bus-Management-System" target="_blank" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/mhtasnia/University-Bus-Management-System" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       
       <!-- Project 3 -->
-      <div class="project-card">
+      <div class="project-card" data-category="game">
         <div class="project-image">
           <img src="./images/pygame.png" alt="Project 3">
           <div class="project-overlay">
@@ -202,7 +252,7 @@
         <div class="project-info">
           <h3>Space Invaders</h3>
           <p>It was a fun little project to experiment with the  pygame library of python. The player has to be safe from the alien spaceship while collecting the meteors within the given timeline.</p>
-          <a href=" https://github.com/mhtasnia/spaceinvader" target="_blank" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/mhtasnia/spaceinvader" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -266,6 +316,91 @@
   </div>
 </section>
 
+<!-- Experience Section -->
+<section class="experience-section" id="experience">
+  <div class="container">
+    <div class="experience-header">
+      <h2>Experience</h2>
+      <hr class="border" />
+    </div>
+    
+    <div class="experience-timeline">
+      <!-- Experience Item 1 -->
+      <div class="experience-card">
+        <div class="experience-year">
+          <span>2024 - Present</span>
+        </div>
+        <div class="experience-content">
+          <div class="experience-badge">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Software Engineer Intern</h3>
+          <p class="experience-company">Tech Solutions Inc.</p>
+          <p class="experience-description">Working on developing and maintaining web applications using React and Node.js. Collaborated with a team of engineers to implement new features and improve existing ones.</p>
+        </div>
+      </div>
+      
+      <!-- Experience Item 2 -->
+      <div class="experience-card">
+        <div class="experience-year">
+          <span>2023 Summer</span>
+        </div>
+        <div class="experience-content">
+          <div class="experience-badge">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>Research Assistant</h3>
+          <p class="experience-company">University of XYZ - AI Lab</p>
+          <p class="experience-description">Assisted in research on machine learning algorithms for natural language processing. Implemented and tested various models, contributing to a published paper.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <h2>Testimonials</h2>
+      <hr class="border" />
+      <p>What people say about me</p>
+    </div>
+    
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <i class="fas fa-quote-left"></i>
+          <p>Meherose is a highly dedicated and quick-learning individual. Her contributions to our team projects were invaluable, always bringing fresh perspectives and a strong work ethic.</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="./images/download.jpeg" alt="Author 1" class="author-avatar">
+          <div class="author-info">
+            <h4>John Doe</h4>
+            <span>Senior Software Engineer</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <i class="fas fa-quote-left"></i>
+          <p>I had the pleasure of mentoring Meherose during her internship. She consistently exceeded expectations, demonstrating strong problem-solving skills and a passion for technology.</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="./images/download.png" alt="Author 2" class="author-avatar">
+          <div class="author-info">
+            <h4>Jane Smith</h4>
+            <span>AI Research Lead</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- problem-solving -->
 <section class="problem-solving-section" id="problem-solving">
   <div class="container">
@@ -305,9 +440,9 @@
               <span class="stat-label">Problems Solved:</span>
               <span class="stat-value">200+</span>
             </div>
-            <a href="https://judge.beecrowd.com/en/profile/723197" class="platform-link" target="_blank">
+              <a href="https://judge.beecrowd.com/en/profile/723197" class="platform-link" target="_blank">
               View Profile <i class="fas fa-external-link-alt"></i>
-            </a>
+              </a>
           </div>
         </div>
         
@@ -373,6 +508,7 @@
     </div>
   </div>
 </section>
+
 
 <footer-component></footer-component>
 </body>

@@ -1,0 +1,214 @@
+
+/* Project Detail Page Styles */
+
+.project-detail-page {
+    padding: var(--spacing-large) 0;
+    background-color: var(--background-light);
+}
+
+.project-hero {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text-color);
+}
+
+.project-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.project-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--primary-dark-color-rgb), 0.7); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: var(--spacing-medium);
+}
+
+.project-hero h1 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.project-content {
+    background-color: var(--background-white);
+    margin-top: -80px; /* Overlap with hero section */
+    position: relative;
+    z-index: 3;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px var(--shadow-medium);
+    padding: var(--spacing-large);
+}
+
+.project-content section {
+    margin-bottom: var(--spacing-large);
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.project-content section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-content h2 {
+    font-size: var(--font-size-h2);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: var(--font-size-h3);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+}
+
+.project-content p {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.project-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-details ul li {
+    margin-bottom: 10px;
+    font-size: var(--font-size-base);
+    color: var(--secondary-text-color);
+}
+
+.project-details ul li strong {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.project-details ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-details ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.project-details ul li a i {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.project-features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-features ul li {
+    background-color: var(--background-light);
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.project-features ul li::before {
+    content: '\f00c'; /* FontAwesome check icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-hero {
+        height: 300px;
+    }
+
+    .project-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-hero p {
+        font-size: 1rem;
+    }
+
+    .project-content {
+        margin-top: -50px;
+        padding: var(--spacing-medium);
+    }
+
+    .project-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-features ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero {
+        height: 250px;
+    }
+
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+
+    .project-hero p {
+        font-size: 0.9rem;
+    }
+
+    .project-content {
+        padding: var(--spacing-small);
+    }
+
+    .project-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+}

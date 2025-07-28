@@ -176,7 +176,7 @@ class Header extends HTMLElement {
       <header>
         <nav>
           <div class="logo">
-            <a href="index.html">
+            <a href="../index.html">
               <img src="./images/NameLogo.png" alt="Meherose Logo" />
             </a>
           </div>
@@ -190,6 +190,8 @@ class Header extends HTMLElement {
             <li><a href="#tech-stack">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#problem-solving">Problem Solving</a></li>
           </ul>
         </nav>
