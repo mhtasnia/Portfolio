@@ -161,9 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (lowerCaseMessage.includes('contact')) {
                 return 'You can reach Meherose via email at tasnia22205341191@diu.edu.bd or connect on LinkedIn and GitHub. The social media links are available in the footer.';
             } else if (lowerCaseMessage.includes('cv') || lowerCaseMessage.includes('resume')) {
-                return 'You can view Meherose's CV by clicking the "View CV" button in the About Me section.';
+                return "You can view Meherose's CV by clicking the \"View CV\" button in the About Me section.";
             } else if (lowerCaseMessage.includes('thank you') || lowerCaseMessage.includes('thanks')) {
-                return 'You're welcome! Is there anything else I can help you with?';
+                return "You're welcome! Is there anything else I can help you with?";
             } else {
                 return 'Sorry, I am not relevant to that question. I can only answer questions based on the information available in this portfolio.';
             }

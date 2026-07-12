@@ -57,7 +57,7 @@ class Header extends HTMLElement {
 
         .nav-links a {
           font-weight: 600;
-          font-size: 1rem;
+          font-size: 10pt;
           color: #fff;
           text-decoration: none;
           padding: 10px 15px;
@@ -190,8 +190,9 @@ class Header extends HTMLElement {
             <li><a href="#tech-stack">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#problem-solving">Problem Solving</a></li>
           </ul>
         </nav>

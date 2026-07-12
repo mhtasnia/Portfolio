@@ -47,11 +47,11 @@
             </div>
             <div class="info-row">
               <span class="info-label">Phone:</span>
-              <span class="info-value">+123 456 7890</span>
+              <span class="info-value">+880 1838 602697</span>
             </div>
             <div class="info-row">
               <span class="info-label">Age:</span>
-              <span class="info-value">22 Years</span>
+              <span class="info-value">24 Years</span>
             </div>
             <div class="info-row">
               <span class="info-label">Email:</span>
@@ -144,8 +144,12 @@
         <div class="slider-item" data-level="intermediate">
           <img src="./images/Java_programming_language_logo.svg.png" alt="JAVA">
           <p>Java</p>
-          <div class="skill-level-indicator"></div>
           <div class="tooltip">Familiar with building robust backend services and Android development.</div>
+        </div>
+        <div class="slider-item" data-level="advanced">
+          <img src="./images/SQL.png" alt="SQL">
+          <p>SQL</p>
+          <div class="tooltip">Experienced in relational database design and querying with MySQL and PostgreSQL.</div>
         </div>
       </div>
     </div>
@@ -160,32 +164,47 @@
           <div class="slider-item-frameworks" data-level="advanced">
             <img src="./images/react-icon_svg_.webp" alt="React">
             <p>React</p>
-            <div class="skill-level-indicator"></div>
-            <div class="tooltip">Proficient in building dynamic and responsive user interfaces.</div>
+              <div class="tooltip">Proficient in building dynamic and responsive user interfaces.</div>
           </div>
           <div class="slider-item-frameworks" data-level="expert">
             <img src="./images/bootstrap.jpeg" alt="bootstrap">
             <p>Bootstrap</p>
-            <div class="skill-level-indicator"></div>
-            <div class="tooltip">Extensive experience in rapid prototyping and responsive design.</div>
+              <div class="tooltip">Extensive experience in rapid prototyping and responsive design.</div>
           </div>
           <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/springboot.png" alt="springboot">
             <p>Springboot</p>
-            <div class="skill-level-indicator"></div>
-            <div class="tooltip">Familiar with building robust backend services and APIs.</div>
+              <div class="tooltip">Familiar with building robust backend services and APIs.</div>
           </div>
           <div class="slider-item-frameworks" data-level="advanced">
             <img src="./images/django.png" alt="Django">
             <p>Django</p>
-            <div class="skill-level-indicator"></div>
-            <div class="tooltip">Skilled in rapid web development with Python.</div>
+              <div class="tooltip">Skilled in rapid web development with Python.</div>
           </div>
           <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/tailwind.png" alt="tailwind">
             <p>Tailwind</p>
-            <div class="skill-level-indicator"></div>
-            <div class="tooltip">Proficient in utility-first CSS for efficient styling.</div>
+              <div class="tooltip">Proficient in utility-first CSS for efficient styling.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/tensorflowpng.png" alt="TensorFlow">
+            <p>TensorFlow</p>
+              <div class="tooltip">Experienced in building and training deep learning models, including CNNs.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/keraspng.png" alt="Keras">
+            <p>Keras</p>
+              <div class="tooltip">Familiar with high-level model building and training on top of TensorFlow.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/pytorch-logo-1.png" alt="PyTorch">
+            <p>PyTorch</p>
+              <div class="tooltip">Familiar with building and training deep learning models.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/gcppng.png" alt="GCP">
+            <p>GCP</p>
+              <div class="tooltip">Familiar with deploying and managing applications on Google Cloud Platform.</div>
           </div>
         </div>
       </div>
@@ -201,14 +220,71 @@
       <p>Below you can see some of my recent projects</p>
     </div>
     
-    <div class="project-filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="web">Web Development</button>
-      <button class="filter-btn" data-filter="game">Game Development</button>
-      <button class="filter-btn" data-filter="ml">Machine Learning</button>
-    </div>
     <div class="projects-grid">
-      <!-- Project 1 -->
+      <!-- Project 1: Mtuber -->
+      <div class="project-card" data-category="ml">
+        <div class="project-image">
+          <img src="./images/mtuber.png" alt="Mtuber">
+          <div class="project-overlay">
+            <h3>Mtuber</h3>
+            <p>CNN-based potato defect sorting</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Mtuber</h3>
+          <p>A computer vision application that automatically detects surface defects in potatoes and classifies them against a compliance threshold. Built end-to-end solo, with a FastAPI backend for model inference and a frontend for interacting with results.</p>
+          <div class="project-meta">
+            <span><strong>Tech:</strong> CNN / Deep Learning, EigenCAM, FastAPI</span>
+            <span><strong>Role:</strong> Solo — end-to-end development</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mtuber.vercel.app" class="view-project-btn" target="_blank" rel="noopener">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/mhtasnia/MTuberAgent" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Daycare Connect -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="./images/daycare.png" alt="Daycare Connect">
+          <div class="project-overlay">
+            <h3>Daycare Connect</h3>
+            <p>Scalable childcare management platform</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Daycare Connect</h3>
+          <p>A childcare coordination platform built on a microservice-based architecture designed to handle distinct service modules independently and scale under high traffic. Led system design and backend development, structuring service boundaries for maintainability.</p>
+          <div class="project-meta">
+            <span><strong>Tech:</strong> Django, ReactJS, PostgreSQL</span>
+            <span><strong>Role:</strong> System Design & Backend</span>
+          </div>
+          <a href="https://github.com/mhtasnia/Daycare-Connect" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 3: EduSphere -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="./images/pipinstall.png" alt="EduSphere">
+          <div class="project-overlay">
+            <h3>EduSphere</h3>
+            <p>Built for Learnathon 2.0 by Brainstation23</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>EduSphere</h3>
+          <p>An interactive learning platform where every user can act as both a Learner and a Teacher, encouraging peer-driven knowledge sharing. As Team Lead, directed frontend development and DevOps, managing deployment pipelines throughout the program.</p>
+          <div class="project-meta">
+            <span><strong>Tech:</strong> Django, ReactJS, PostgreSQL</span>
+            <span><strong>Role:</strong> Team Lead, Frontend & DevOps</span>
+          </div>
+          <a href="https://github.com/mhtasnia/pipinstallc" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
       <div class="project-card" data-category="web">
         <div class="project-image">
           <img src="./images/borrow.png" alt="Project 1">
@@ -223,8 +299,8 @@
           <a href="https://github.com/mhtasnia/Borrow-Read" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      
-      <!-- Project 2 -->
+
+      <!-- Project 5 -->
       <div class="project-card" data-category="web">
         <div class="project-image">
           <img src="./images/bus managementpng.png" alt="Project 2">
@@ -239,8 +315,8 @@
           <a href="https://github.com/mhtasnia/University-Bus-Management-System" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      
-      <!-- Project 3 -->
+
+      <!-- Project 6 -->
       <div class="project-card" data-category="game">
         <div class="project-image">
           <img src="./images/pygame.png" alt="Project 3">
@@ -279,7 +355,7 @@
           </div>
           <h3>Bachelor of Science in Software Engineering</h3>
           <p class="education-institution">Daffodil International University</p>
-          <p class="education-description">Majoring in Software Engineering. Maintaining a CGPA of 3.96 out of 4.00.</p>
+          <p class="education-description">Majoring in Software Engineering. Maintaining a CGPA of 3.97 out of 4.00.</p>
         </div>
       </div>
       
@@ -316,86 +392,111 @@
   </div>
 </section>
 
-<!-- Experience Section -->
-<section class="experience-section" id="experience">
+<!-- Leadership & Experience Section -->
+<section class="experience-section" id="leadership" style="background-color: var(--background-light);">
   <div class="container">
     <div class="experience-header">
-      <h2>Experience</h2>
+      <h2>Leadership & Experience</h2>
       <hr class="border" />
     </div>
-    
+
     <div class="experience-timeline">
-      <!-- Experience Item 1 -->
       <div class="experience-card">
         <div class="experience-year">
-          <span>2024 - Present</span>
+          <span>2024</span>
         </div>
         <div class="experience-content">
           <div class="experience-badge">
-            <i class="fas fa-briefcase"></i>
+            <i class="fas fa-rocket"></i>
           </div>
-          <h3>Software Engineer Intern</h3>
-          <p class="experience-company">Tech Solutions Inc.</p>
-          <p class="experience-description">Working on developing and maintaining web applications using React and Node.js. Collaborated with a team of engineers to implement new features and improve existing ones.</p>
+          <h3>Team Leader</h3>
+          <p class="experience-company">NASA Space Apps Challenge 2024</p>
+          <p class="experience-description">Coordinated a 5-member team through task delegation and conflict resolution while competing in the NASA Space Apps Challenge Bangladesh 2024, leading the team to 2nd runner-up in the Cumilla region.</p>
         </div>
       </div>
-      
-      <!-- Experience Item 2 -->
+
       <div class="experience-card">
         <div class="experience-year">
-          <span>2023 Summer</span>
+          <span>Jan - Apr 2025</span>
         </div>
         <div class="experience-content">
           <div class="experience-badge">
-            <i class="fas fa-flask"></i>
+            <i class="fas fa-laptop-code"></i>
           </div>
-          <h3>Research Assistant</h3>
-          <p class="experience-company">University of XYZ - AI Lab</p>
-          <p class="experience-description">Assisted in research on machine learning algorithms for natural language processing. Implemented and tested various models, contributing to a published paper.</p>
+          <h3>Participant, Learnathon 3.0 Fresher Training</h3>
+          <p class="experience-company">Geeky Solutions</p>
+          <p class="experience-description">Completed a 4-month software apprenticeship as part of the Learnathon 3.0 Fresher Training program, gaining hands-on industry experience.</p>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-year">
+          <span>Sep - Dec 2024</span>
+        </div>
+        <div class="experience-content">
+          <div class="experience-badge">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3>Trainer</h3>
+          <p class="experience-company">DIU Software Engineering Club</p>
+          <p class="experience-description">Trained and mentored students in preparation for the DIU Code Trap Programming Contest.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="testimonials-section" id="testimonials">
+<!-- Achievements Section -->
+<section class="achievements-section" id="achievements">
   <div class="container">
-    <div class="testimonials-header">
-      <h2>Testimonials</h2>
+    <div class="experience-header">
+      <h2>Achievements</h2>
       <hr class="border" />
-      <p>What people say about me</p>
     </div>
-    
-    <div class="testimonials-grid">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">
-          <i class="fas fa-quote-left"></i>
-          <p>Meherose is a highly dedicated and quick-learning individual. Her contributions to our team projects were invaluable, always bringing fresh perspectives and a strong work ethic.</p>
-        </div>
-        <div class="testimonial-author">
-          <img src="./images/download.jpeg" alt="Author 1" class="author-avatar">
-          <div class="author-info">
-            <h4>John Doe</h4>
-            <span>Senior Software Engineer</span>
-          </div>
-        </div>
+
+    <div class="credentials-grid">
+      <div class="credential-card">
+        <div class="credential-icon"><i class="fas fa-trophy"></i></div>
+        <h3>NASA Space Apps Challenge 2024</h3>
+        <p class="credential-meta">2nd Runner-up (Cumilla Region)</p>
+        <p>Led a team of 5 to a regional 2nd runner-up placement in the NASA Space Apps Challenge Bangladesh 2024.</p>
       </div>
-      
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">
-          <i class="fas fa-quote-left"></i>
-          <p>I had the pleasure of mentoring Meherose during her internship. She consistently exceeded expectations, demonstrating strong problem-solving skills and a passion for technology.</p>
-        </div>
-        <div class="testimonial-author">
-          <img src="./images/download.png" alt="Author 2" class="author-avatar">
-          <div class="author-info">
-            <h4>Jane Smith</h4>
-            <span>AI Research Lead</span>
-          </div>
-        </div>
+
+      <div class="credential-card">
+        <div class="credential-icon"><i class="fas fa-award"></i></div>
+        <h3>Dean's List Award</h3>
+        <p class="credential-meta">Fall 2023</p>
+        <p>Recognized for extraordinary academic performance during the Fall 2023 semester.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="achievements-section" id="certifications" style="background-color: var(--background-light);">
+  <div class="container">
+    <div class="experience-header">
+      <h2>Certifications</h2>
+      <hr class="border" />
+    </div>
+
+    <div class="credentials-grid">
+      <div class="credential-card">
+        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Google Cloud Generative AI Leader Certification</h3>
+        <p class="credential-meta">Google Cloud &middot; Jan 2026</p>
+      </div>
+
+      <div class="credential-card">
+        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
+        <h3>AWS Academy Machine Learning Foundations</h3>
+        <p class="credential-meta">Amazon Web Services</p>
+      </div>
+
+      <div class="credential-card">
+        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Managing Big Data with MySQL</h3>
+        <p class="credential-meta">Duke University &middot; Coursera</p>
       </div>
     </div>
   </div>

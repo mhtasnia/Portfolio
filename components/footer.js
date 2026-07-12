@@ -172,6 +172,9 @@ class Footer extends HTMLElement {
                         <li><a href="#tech-stack"><i class="fas fa-chevron-right"></i> Tech Stack</a></li>
                         <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
                         <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="#leadership"><i class="fas fa-chevron-right"></i> Leadership</a></li>
+                        <li><a href="#achievements"><i class="fas fa-chevron-right"></i> Achievements</a></li>
+                        <li><a href="#certifications"><i class="fas fa-chevron-right"></i> Certifications</a></li>
                         <li><a href="#problem-solving"><i class="fas fa-chevron-right"></i> Problem Solving</a></li>
                         <li><a href="./documents/Cv_v2.pdf" target="_blank" rel="noopener"><i class="fas fa-chevron-right"></i> Download CV</a></li>
                     </ul>
@@ -180,7 +183,7 @@ class Footer extends HTMLElement {
                 <div class="footer-section footer-contact">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Daffodil International University, Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-phone"></i> +880 1838 602697</p>
                     <p><i class="fas fa-envelope"></i> tasnia22205341191@diu.edu.bd</p>
                 </div>
             </div>
