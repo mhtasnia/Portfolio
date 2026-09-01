@@ -139,7 +139,7 @@ class Header extends HTMLElement {
           .nav-links {
             position: fixed;
             top: 0;
-            right: -100%;
+            right: 0;
             width: 250px;
             height: 100vh;
             background-color: rgba(49, 47, 54, 0.98);
@@ -147,12 +147,13 @@ class Header extends HTMLElement {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: right 0.3s ease;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
             box-shadow: -5px 0 15px rgba(0,0,0,0.2);
           }
-          
+
           .nav-links.active {
-            right: 0;
+            transform: translateX(0);
           }
           
           .nav-links li {

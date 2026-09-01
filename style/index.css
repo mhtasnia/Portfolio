@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 :root {
   --primary-color: #334464;
   --accent-color: #62aeb0;
