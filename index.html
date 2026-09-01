@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meherose Hossain Tasnia — Software Engineering graduate, IEEE-published in computer vision, building on AWS and Google Cloud. Machine learning engineer, EICT 2025 first author.">
+    <meta property="og:title" content="Meherose Hossain Tasnia — Machine Learning Engineer">
+    <meta property="og:description" content="Software Engineering graduate, published DL researcher (IEEE EICT 2025), building with AWS & GenAI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/Home.png">
     <script src="components/Header.js" defer></script>
     <script src="components/footer.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js?v=2" defer></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="style/index.css" />
     <link rel="icon" type="image/x-icon" href="./images/fav.png">
-    <title>Meherose</title>
+    <title>Meherose Hossain Tasnia — Machine Learning Engineer</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Meherose Hossain Tasnia",
+      "jobTitle": "Machine Learning Engineer",
+      "url": "https://mhtasnia.github.io/Portfolio/",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Daffodil International University"
+      },
+      "knowsAbout": ["Machine Learning", "Deep Learning", "Computer Vision", "Convolutional Neural Networks", "Amazon Bedrock", "AWS Lambda", "Google Cloud", "FastAPI", "Django"],
+      "sameAs": [
+        "https://github.com/mhtasnia",
+        "https://www.linkedin.com/in/meherose-hossain-tasnia-763074266/",
+        "https://orcid.org/0009-0008-1533-0594"
+      ]
+    }
+    </script>
 </head>
 <body>
     <header-component></header-component>
@@ -23,9 +47,15 @@
             <span class="name">Meherose Hossain Tasnia</span> 
             <br>
             </div>
-            <div class="banner-subtext"><span class="designation">Web Developer</span></div>
+            <div class="banner-subtext"><span class="designation">Software Engineering graduate</span></div>
             <div class="banner-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-links">
+                <a href="./documents/tasnia_ml_resume.pdf" target="_blank" rel="noopener" class="hero-link"><i class="fas fa-file-alt"></i> Résumé</a>
+                <a href="https://github.com/mhtasnia" target="_blank" rel="noopener" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/meherose-hossain-tasnia-763074266/" target="_blank" rel="noopener" class="hero-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://orcid.org/0009-0008-1533-0594" target="_blank" rel="noopener" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
             </div>
         </div>
     </div>
@@ -36,8 +66,8 @@
           <div class="about-image-container">
             <img src="./images/Home.png" alt="Meherose Hossain Tasnia" class="about-image">
           </div>
-          <h1>I am a software Engineering Student</h1>
-          <p>I have a Strong foundation of Machine Learning. I have also done competitive programming, web development, database management and robotics project. I am a firm believer in continuous learning. I always like to explore new technologies. 
+          <h1>I'm a Software Engineering graduate building on AWS and Google Cloud</h1>
+          <p>I build machine learning systems that make it out of the notebook. My research on attention-based CNNs for medical imaging was published at IEEE EICT 2025, and I ship the same models behind real APIs — FastAPI inference endpoints, Django backends, Dockerized deployments. Currently focused on generative AI and cloud-native ML on AWS.
           </p>
           <div class="personal-info">
             <hr>
@@ -46,20 +76,12 @@
               <span class="info-value">Meherose Hossain Tasnia</span>
             </div>
             <div class="info-row">
-              <span class="info-label">Phone:</span>
-              <span class="info-value">+880 1838 602697</span>
-            </div>
-            <div class="info-row">
-              <span class="info-label">Age:</span>
-              <span class="info-value">24 Years</span>
-            </div>
-            <div class="info-row">
               <span class="info-label">Email:</span>
-              <span class="info-value">tasnia22205341191@diu.edu.bd</span>
+              <span class="info-value">mhtasnia@gmail.com</span>
             </div>
             <div class="info-row">
               <span class="info-label">Occupation:</span>
-              <span class="info-value">Student</span>
+              <span class="info-value">Software Engineering Graduate</span>
             </div>
             <div class="info-row">
               <span class="info-label">Nationality:</span>
@@ -96,13 +118,36 @@
             </div>
           </div>
           <div class="cv-button-container">
-            <a href="./documents/Cv_v2.pdf" class="cv-button" target="_blank" rel="noopener">
+            <a href="./documents/tasnia_ml_resume.pdf" class="cv-button" target="_blank" rel="noopener">
               <i class="fas fa-file-download"></i>
               <span>View CV</span>
             </a>
           </div>
         </div>
       </section>
+
+     <hr class="border" />
+
+    <!-- Research & Publications Section -->
+    <section class="research-section" id="research">
+      <div class="container">
+        <div class="research-header">
+          <h2>Research &amp; Publications</h2>
+          <hr class="border" />
+        </div>
+        <div class="research-card">
+          <span class="research-badge">First Author</span>
+          <h3>MSRA-Net: An Efficient Deep Learning Architecture with Spatial Attention for Diabetic Retinopathy Classification from Retinal Images</h3>
+          <p class="research-authors">Meherose Hossain Tasnia, Fahim Sahriar, Farhana Rahman, Adiba Masud, Kazi Rifat Ahmed, et al.</p>
+          <p class="research-venue">7th International Conference on Electrical Information and Communication Technology (EICT) &middot; IEEE &middot; 2025</p>
+          <p class="research-abstract">A multi-scale residual architecture with a spatial attention mechanism that grades diabetic retinopathy severity from fundus images, designed to hold accuracy while keeping the model cheap enough to run in low-resource clinical settings.</p>
+          <div class="research-links">
+            <a href="https://doi.org/10.1109/EICT68394.2025.11355536" target="_blank" rel="noopener" class="view-project-btn"><i class="fas fa-external-link-alt"></i> Read on IEEE Xplore</a>
+            <a href="https://orcid.org/0009-0008-1533-0594" target="_blank" rel="noopener" class="view-project-btn"><i class="fab fa-orcid"></i> ORCID Record</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
      <hr class="border" />
 
@@ -161,31 +206,6 @@
     <div class="tech-stack-slider">
       <div class="frameworks-slider">
         <div class="slider-items-frameworks">
-          <div class="slider-item-frameworks" data-level="advanced">
-            <img src="./images/react-icon_svg_.webp" alt="React">
-            <p>React</p>
-              <div class="tooltip">Proficient in building dynamic and responsive user interfaces.</div>
-          </div>
-          <div class="slider-item-frameworks" data-level="expert">
-            <img src="./images/bootstrap.jpeg" alt="bootstrap">
-            <p>Bootstrap</p>
-              <div class="tooltip">Extensive experience in rapid prototyping and responsive design.</div>
-          </div>
-          <div class="slider-item-frameworks" data-level="intermediate">
-            <img src="./images/springboot.png" alt="springboot">
-            <p>Springboot</p>
-              <div class="tooltip">Familiar with building robust backend services and APIs.</div>
-          </div>
-          <div class="slider-item-frameworks" data-level="advanced">
-            <img src="./images/django.png" alt="Django">
-            <p>Django</p>
-              <div class="tooltip">Skilled in rapid web development with Python.</div>
-          </div>
-          <div class="slider-item-frameworks" data-level="intermediate">
-            <img src="./images/tailwind.png" alt="tailwind">
-            <p>Tailwind</p>
-              <div class="tooltip">Proficient in utility-first CSS for efficient styling.</div>
-          </div>
           <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/tensorflowpng.png" alt="TensorFlow">
             <p>TensorFlow</p>
@@ -202,14 +222,125 @@
               <div class="tooltip">Familiar with building and training deep learning models.</div>
           </div>
           <div class="slider-item-frameworks" data-level="intermediate">
+            <div class="icon-badge"><i class="fab fa-aws"></i></div>
+            <p>Amazon Bedrock</p>
+              <div class="tooltip">Built a conversational support agent using Bedrock Flows.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <div class="icon-badge"><i class="fas fa-bolt"></i></div>
+            <p>AWS Lambda</p>
+              <div class="tooltip">Wrote Lambda-backed actions behind a GenAI chatbot flow.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
             <img src="./images/gcppng.png" alt="GCP">
             <p>GCP</p>
               <div class="tooltip">Familiar with deploying and managing applications on Google Cloud Platform.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="advanced">
+            <img src="./images/react-icon_svg_.webp" alt="React">
+            <p>React</p>
+              <div class="tooltip">Proficient in building dynamic and responsive user interfaces.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="advanced">
+            <img src="./images/django.png" alt="Django">
+            <p>Django</p>
+              <div class="tooltip">Skilled in rapid web development with Python.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="expert">
+            <img src="./images/bootstrap.jpeg" alt="bootstrap">
+            <p>Bootstrap</p>
+              <div class="tooltip">Extensive experience in rapid prototyping and responsive design.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/tailwind.png" alt="tailwind">
+            <p>Tailwind</p>
+              <div class="tooltip">Proficient in utility-first CSS for efficient styling.</div>
+          </div>
+          <div class="slider-item-frameworks" data-level="intermediate">
+            <img src="./images/springboot.png" alt="springboot">
+            <p>Springboot</p>
+              <div class="tooltip">Familiar with building robust backend services and APIs.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+<!-- Skills Section -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="tech-stack-text">
+      <h2>Skills</h2>
+      <hr class="border" />
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>ML &amp; Deep Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">Keras</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">CNNs</span>
+          <span class="skill-tag">Attention Mechanisms</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Model Evaluation</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Generative AI &amp; Cloud</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Amazon Bedrock</span>
+          <span class="skill-tag">AWS Lambda</span>
+          <span class="skill-tag">Prompt Design</span>
+          <span class="skill-tag">LLM Application Patterns</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Data</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Django REST Framework</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">JWT Auth</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">pandas</span>
+          <span class="skill-tag">NumPy</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tooling &amp; DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">SonarCloud</span>
+          <span class="skill-tag">Snyk</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Render</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Projects Section -->
 <section class="projects-section" id="projects">
@@ -231,15 +362,17 @@
           </div>
         </div>
         <div class="project-info">
-          <h3>Mtuber</h3>
-          <p>A computer vision application that automatically detects surface defects in potatoes and classifies them against a compliance threshold. Built end-to-end solo, with a FastAPI backend for model inference and a frontend for interacting with results.</p>
+          <h3>Mtuber — CNN Potato Defect Detection</h3>
+          <p>A convolutional classifier that detects defects in potato crop imagery, served behind a FastAPI inference endpoint so the model is callable, not just trainable. End-to-end: data pipeline, training, evaluation, deployment.
+          <!-- TODO: add test accuracy/F1 once confirmed --></p>
           <div class="project-meta">
-            <span><strong>Tech:</strong> CNN / Deep Learning, EigenCAM, FastAPI</span>
+            <span><strong>Tech:</strong> TensorFlow, Keras, FastAPI, Python, EigenCAM</span>
             <span><strong>Role:</strong> Solo — end-to-end development</span>
           </div>
           <div class="project-links">
             <a href="https://mtuber.vercel.app" class="view-project-btn" target="_blank" rel="noopener">Live Demo <i class="fas fa-external-link-alt"></i></a>
-            <a href="https://github.com/mhtasnia/MTuberAgent" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+            <a href="https://github.com/mhtasnia/MTuberAgent" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
+            <a href="https://data.mendeley.com/datasets/4vty9rz7zw/1" class="view-project-btn" target="_blank" rel="noopener">Dataset <i class="fas fa-database"></i></a>
           </div>
         </div>
       </div>
@@ -255,12 +388,15 @@
         </div>
         <div class="project-info">
           <h3>Daycare Connect</h3>
-          <p>A childcare coordination platform built on a microservice-based architecture designed to handle distinct service modules independently and scale under high traffic. Led system design and backend development, structuring service boundaries for maintainability.</p>
+          <p>A platform connecting working parents in Bangladesh with verified daycare centres — booking with authorized-pickup management, provider dashboards, reviews, and JWT-authenticated accounts. Dockerized, deployed across Vercel and Render, with SonarCloud and Snyk gating quality and security in CI.</p>
           <div class="project-meta">
-            <span><strong>Tech:</strong> Django, ReactJS, PostgreSQL</span>
+            <span><strong>Tech:</strong> React, Vite, Django REST, PostgreSQL, Docker, JWT</span>
             <span><strong>Role:</strong> System Design & Backend</span>
           </div>
-          <a href="https://github.com/mhtasnia/Daycare-Connect" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+          <div class="project-links">
+            <a href="https://daycare-connect.vercel.app" class="view-project-btn" target="_blank" rel="noopener">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/mhtasnia/Daycare-Connect" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
 
@@ -270,66 +406,40 @@
           <img src="./images/pipinstall.png" alt="EduSphere">
           <div class="project-overlay">
             <h3>EduSphere</h3>
-            <p>Built for Learnathon 2.0 by Brainstation23</p>
+            <p>Built for Learnathon 3.0 by Geeky Solutions</p>
           </div>
         </div>
         <div class="project-info">
-          <h3>EduSphere</h3>
-          <p>An interactive learning platform where every user can act as both a Learner and a Teacher, encouraging peer-driven knowledge sharing. As Team Lead, directed frontend development and DevOps, managing deployment pipelines throughout the program.</p>
+          <h3>EduSphere <span class="role-badge">Team Lead</span></h3>
+          <p>A peer-learning platform for university students: resource sharing, peer mentoring, search by institution and department, and premium content with payment integration. Led a three-developer team through the Learnathon 3.0 industry programme.</p>
           <div class="project-meta">
-            <span><strong>Tech:</strong> Django, ReactJS, PostgreSQL</span>
+            <span><strong>Tech:</strong> React, Django REST, PostgreSQL</span>
             <span><strong>Role:</strong> Team Lead, Frontend & DevOps</span>
           </div>
-          <a href="https://github.com/mhtasnia/pipinstallc" class="view-project-btn" target="_blank" rel="noopener">View project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/mhtasnia/pipinstallc" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
+    </div>
 
-      <!-- Project 4 -->
-      <div class="project-card" data-category="web">
-        <div class="project-image">
-          <img src="./images/borrow.png" alt="Project 1">
-          <div class="project-overlay">
-            <h3>Borrow&Read</h3>
-            <p>Book Rentals</p>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>Borrow&Read</h3>
-          <p>Borrow & Read is a web application designed to facilitate book rentals between users and partnering libraries.I developed this system in 2nd year of my bachelors program.</p>
-          <a href="https://github.com/mhtasnia/Borrow-Read" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
+    <!-- Other Projects -->
+    <div class="other-projects-header">
+      <h3>Other Projects</h3>
+    </div>
+    <div class="other-projects-grid">
+      <div class="other-project-card">
+        <h4>Borrow &amp; Read</h4>
+        <p>A book-rental web app connecting users with partnering libraries. Built in 2nd year of the bachelors program.</p>
+        <a href="https://github.com/mhtasnia/Borrow-Read" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
       </div>
-
-      <!-- Project 5 -->
-      <div class="project-card" data-category="web">
-        <div class="project-image">
-          <img src="./images/bus managementpng.png" alt="Project 2">
-          <div class="project-overlay">
-            <h3>Bus Management</h3>
-            <p>Bus Management System for a university</p>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>Bus Management</h3>
-          <p>I developed this system in the 1st year of my bachelors program. Bus Management System is a comprehensive solution aimed at modernizing university transportation services. </p>
-          <a href="https://github.com/mhtasnia/University-Bus-Management-System" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
+      <div class="other-project-card">
+        <h4>Bus Management System</h4>
+        <p>A university transportation management system. Built in 1st year of the bachelors program.</p>
+        <a href="https://github.com/mhtasnia/University-Bus-Management-System" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
       </div>
-
-      <!-- Project 6 -->
-      <div class="project-card" data-category="game">
-        <div class="project-image">
-          <img src="./images/pygame.png" alt="Project 3">
-          <div class="project-overlay">
-            <h3>Space Invaders</h3>
-            <p>A simple space invaders game using pygame</p>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>Space Invaders</h3>
-          <p>It was a fun little project to experiment with the  pygame library of python. The player has to be safe from the alien spaceship while collecting the meteors within the given timeline.</p>
-          <a href="https://github.com/mhtasnia/spaceinvader" class="view-project-btn">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
+      <div class="other-project-card">
+        <h4>Space Invaders</h4>
+        <p>A Space Invaders clone built with pygame to experiment with the library.</p>
+        <a href="https://github.com/mhtasnia/spaceinvader" class="view-project-btn" target="_blank" rel="noopener">View code <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -347,15 +457,15 @@
       <!-- Education Item 1 -->
       <div class="education-card">
         <div class="education-year">
-          <span>2022 - Present</span>
+          <span>2022 - 2026</span>
         </div>
         <div class="education-content">
           <div class="education-badge">
             <i class="fas fa-graduation-cap"></i>
           </div>
-          <h3>Bachelor of Science in Software Engineering</h3>
+          <h3>B.Sc. in Software Engineering</h3>
           <p class="education-institution">Daffodil International University</p>
-          <p class="education-description">Majoring in Software Engineering. Maintaining a CGPA of 3.97 out of 4.00.</p>
+          <p class="education-description">Graduated with a CGPA of 3.97 out of 4.00.</p>
         </div>
       </div>
       
@@ -423,7 +533,7 @@
           <div class="experience-badge">
             <i class="fas fa-laptop-code"></i>
           </div>
-          <h3>Participant, Learnathon 3.0 Fresher Training</h3>
+          <h3>Apprentice, Learnathon 3.0 Fresher Training</h3>
           <p class="experience-company">Geeky Solutions</p>
           <p class="experience-description">Completed a 4-month software apprenticeship as part of the Learnathon 3.0 Fresher Training program, gaining hands-on industry experience.</p>
         </div>
@@ -439,34 +549,67 @@
           </div>
           <h3>Trainer</h3>
           <p class="experience-company">DIU Software Engineering Club</p>
-          <p class="experience-description">Trained and mentored students in preparation for the DIU Code Trap Programming Contest.</p>
+          <p class="experience-description">Trained students for the DIU Code Trap Programming Contest and was awarded an appreciation crest for the contribution.</p>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-year">
+          <span>Jul 2025</span>
+        </div>
+        <div class="experience-content">
+          <div class="experience-badge">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <h3>IT Volunteer</h3>
+          <p class="experience-company">World Friends Korea IT Volunteer Programme &middot; Daffodil International University &times; World Friends Korea</p>
+          <p class="experience-description">Two-week international IT exchange (12–31 Jul 2025) covering AI agents and emerging technologies.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Achievements Section -->
+<!-- Honors & Awards Section -->
 <section class="achievements-section" id="achievements">
   <div class="container">
     <div class="experience-header">
-      <h2>Achievements</h2>
+      <h2>Honors &amp; Awards</h2>
       <hr class="border" />
     </div>
 
     <div class="credentials-grid">
       <div class="credential-card">
-        <div class="credential-icon"><i class="fas fa-trophy"></i></div>
-        <h3>NASA Space Apps Challenge 2024</h3>
-        <p class="credential-meta">2nd Runner-up (Cumilla Region)</p>
-        <p>Led a team of 5 to a regional 2nd runner-up placement in the NASA Space Apps Challenge Bangladesh 2024.</p>
+        <div class="credential-body credential-body-noimage">
+          <div class="credential-icon"><i class="fas fa-trophy"></i></div>
+          <h3>2nd Runner-Up, NASA Space Apps Challenge Bangladesh 2024</h3>
+          <p class="credential-meta">Cumilla Region &middot; awarded by BASIS &middot; Oct 2024</p>
+          <p>Team EXOVERSE — led the team of 5 to a regional 2nd runner-up placement in the NASA Space Apps Challenge Bangladesh 2024.</p>
+          <div class="credential-actions">
+            <button type="button" class="credential-view-link" data-cert-src="images/certificates/nasa-space-apps-2nd-runner-up-cumilla-2024.webp" data-cert-alt="2nd Runner-Up, NASA Space Apps Challenge Bangladesh 2024 certificate, issued October 2024" data-cert-w="1400" data-cert-h="990">View certificate <i class="fas fa-image"></i></button>
+          </div>
+        </div>
       </div>
 
       <div class="credential-card">
-        <div class="credential-icon"><i class="fas fa-award"></i></div>
-        <h3>Dean's List Award</h3>
-        <p class="credential-meta">Fall 2023</p>
-        <p>Recognized for extraordinary academic performance during the Fall 2023 semester.</p>
+        <div class="credential-body credential-body-noimage">
+          <div class="credential-icon"><i class="fas fa-award"></i></div>
+          <h3>Dean's List Award</h3>
+          <p class="credential-meta">Faculty of Science and Information Technology, Daffodil International University &middot; Fall 2023</p>
+          <p>Recognized for extraordinary academic performance during the Fall 2023 semester.</p>
+          <div class="credential-actions">
+            <button type="button" class="credential-view-link" data-cert-src="images/certificates/diu-deans-list-fall2023.webp" data-cert-alt="Dean's List Award certificate, Fall 2023" data-cert-w="980" data-cert-h="1298">View certificate <i class="fas fa-image"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="credential-card">
+        <div class="credential-body credential-body-noimage">
+          <div class="credential-icon"><i class="fas fa-code"></i></div>
+          <h3>Competitive Programming</h3>
+          <p class="credential-meta">LeetCode &middot; Beecrowd &middot; HackerRank</p>
+          <p>LeetCode SQL 50 completed, 200+ Beecrowd solutions, and a 2-star (SQL) HackerRank badge.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -478,29 +621,162 @@
     <div class="experience-header">
       <h2>Certifications</h2>
       <hr class="border" />
+      <div class="credential-profile-links">
+        <a href="https://www.credly.com/users/meherose-hossain-tasnia/badges" target="_blank" rel="noopener noreferrer" class="view-project-btn">Credly Profile <i class="fas fa-external-link-alt"></i></a>
+        <a href="https://skillsprofile.skillbuilder.aws/user/mhtasnia/" target="_blank" rel="noopener noreferrer" class="view-project-btn">AWS Skill Builder Profile <i class="fas fa-external-link-alt"></i></a>
+      </div>
     </div>
 
+    <div class="credential-group-title">Cloud &amp; Generative AI</div>
     <div class="credentials-grid">
       <div class="credential-card">
-        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
-        <h3>Google Cloud Generative AI Leader Certification</h3>
-        <p class="credential-meta">Google Cloud &middot; Jan 2026</p>
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/udacity-bedrock-chatbot-badge-2026.webp" data-cert-alt="Customer Support Chatbot with Amazon Bedrock Flows project badge, issued August 2026" data-cert-w="804" data-cert-h="804" aria-label="View certificate">
+          <img src="images/certificates/udacity-bedrock-chatbot-badge-2026.webp" alt="Customer Support Chatbot with Amazon Bedrock Flows project badge, issued August 2026" loading="lazy" width="804" height="804">
+        </button>
+        <div class="credential-body">
+          <h3>Customer Support Chatbot with Amazon Bedrock Flows</h3>
+          <p class="credential-meta">Udacity &middot; Aug 2026</p>
+        </div>
       </div>
-
       <div class="credential-card">
-        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
-        <h3>AWS Academy Machine Learning Foundations</h3>
-        <p class="credential-meta">Amazon Web Services</p>
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/udacity-aws-ai-practitioner-2026.webp" data-cert-alt="AWS AI Practitioner Challenge certificate, issued April 2026" data-cert-w="1235" data-cert-h="945" aria-label="View certificate">
+          <img src="images/certificates/udacity-aws-ai-practitioner-2026.webp" alt="AWS AI Practitioner Challenge certificate, issued April 2026" loading="lazy" width="1235" height="945">
+        </button>
+        <div class="credential-body">
+          <h3>AWS AI Practitioner Challenge</h3>
+          <p class="credential-meta">Udacity &middot; Apr 2026</p>
+          <div class="credential-actions">
+            <a href="https://www.udacity.com/certificate/e/19ad17aa-2aa0-11f1-96ee-cfbd83788ef5" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
       </div>
-
       <div class="credential-card">
-        <div class="credential-icon"><i class="fas fa-certificate"></i></div>
-        <h3>Managing Big Data with MySQL</h3>
-        <p class="credential-meta">Duke University &middot; Coursera</p>
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/google-generative-ai-leader-2025.webp" data-cert-alt="Generative AI Leader Certification certificate, issued December 2025" data-cert-w="1177" data-cert-h="888" aria-label="View certificate">
+          <img src="images/certificates/google-generative-ai-leader-2025.webp" alt="Generative AI Leader Certification certificate, issued December 2025" loading="lazy" width="1177" height="888">
+        </button>
+        <div class="credential-body">
+          <h3>Generative AI Leader Certification</h3>
+          <p class="credential-meta">Google Cloud &middot; Dec 2025 (expires Dec 2028)</p>
+          <div class="credential-actions">
+            <a href="https://www.credly.com/badges/84604640-97b3-44f6-862c-81e233ab727c" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/google-intro-generative-ai-2025.webp" data-cert-alt="Introduction to Generative AI certificate, issued January 2025" data-cert-w="699" data-cert-h="711" aria-label="View certificate">
+          <img src="images/certificates/google-intro-generative-ai-2025.webp" alt="Introduction to Generative AI certificate, issued January 2025" loading="lazy" width="699" height="711">
+        </button>
+        <div class="credential-body">
+          <h3>Introduction to Generative AI</h3>
+          <p class="credential-meta">Google Cloud &middot; Jan 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.skills.google/public_profiles/477b1bb6-6a10-445f-8be6-b31170f3d4db/badges/13484070" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="credential-group-title">Machine Learning</div>
+    <div class="credentials-grid">
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/aws-academy-ml-foundations-2025.webp" data-cert-alt="AWS Academy Graduate — Machine Learning Foundations certificate, issued June 2025" data-cert-w="1400" data-cert-h="1082" aria-label="View certificate">
+          <img src="images/certificates/aws-academy-ml-foundations-2025.webp" alt="AWS Academy Graduate — Machine Learning Foundations certificate, issued June 2025" loading="lazy" width="1400" height="1082">
+        </button>
+        <div class="credential-body">
+          <h3>AWS Academy Graduate — Machine Learning Foundations</h3>
+          <p class="credential-meta">Amazon Web Services &middot; Jun 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.credly.com/badges/3c566244-2aad-4806-8d8c-6cab6002caa3" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/deeplearningai-structuring-ml-projects-2025.webp" data-cert-alt="Structuring Machine Learning Projects certificate, issued May 2025" data-cert-w="697" data-cert-h="538" aria-label="View certificate">
+          <img src="images/certificates/deeplearningai-structuring-ml-projects-2025.webp" alt="Structuring Machine Learning Projects certificate, issued May 2025" loading="lazy" width="697" height="538">
+        </button>
+        <div class="credential-body">
+          <h3>Structuring Machine Learning Projects</h3>
+          <p class="credential-meta">DeepLearning.AI &middot; May 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.coursera.org/account/accomplishments/verify/3OKKYJPHO17Y" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/deeplearningai-advanced-learning-algorithms-2025.webp" data-cert-alt="Advanced Learning Algorithms certificate, issued January 2025" data-cert-w="1400" data-cert-h="1082" aria-label="View certificate">
+          <img src="images/certificates/deeplearningai-advanced-learning-algorithms-2025.webp" alt="Advanced Learning Algorithms certificate, issued January 2025" loading="lazy" width="1400" height="1082">
+        </button>
+        <div class="credential-body">
+          <h3>Advanced Learning Algorithms</h3>
+          <p class="credential-meta">DeepLearning.AI &middot; Jan 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.coursera.org/account/accomplishments/verify/YENHJTZ2TX4R" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/deeplearningai-supervised-ml-2024.webp" data-cert-alt="Supervised Machine Learning: Regression and Classification certificate, issued November 2024" data-cert-w="1400" data-cert-h="1082" aria-label="View certificate">
+          <img src="images/certificates/deeplearningai-supervised-ml-2024.webp" alt="Supervised Machine Learning: Regression and Classification certificate, issued November 2024" loading="lazy" width="1400" height="1082">
+        </button>
+        <div class="credential-body">
+          <h3>Supervised Machine Learning: Regression and Classification</h3>
+          <p class="credential-meta">DeepLearning.AI &middot; Nov 2024</p>
+          <div class="credential-actions">
+            <a href="https://www.coursera.org/account/accomplishments/verify/EF0S8M19HHD5" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="credential-group-title">Data &amp; Open Science</div>
+    <div class="credentials-grid">
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/duke-managing-big-data-mysql-2025.webp" data-cert-alt="Managing Big Data with MySQL certificate, issued June 2025" data-cert-w="701" data-cert-h="539" aria-label="View certificate">
+          <img src="images/certificates/duke-managing-big-data-mysql-2025.webp" alt="Managing Big Data with MySQL certificate, issued June 2025" loading="lazy" width="701" height="539">
+        </button>
+        <div class="credential-body">
+          <h3>Managing Big Data with MySQL</h3>
+          <p class="credential-meta">Duke University &middot; Jun 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.coursera.org/account/accomplishments/verify/CWBBOZO6KRFX" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/duke-data-science-math-skills-2025.webp" data-cert-alt="Data Science Math Skills certificate, issued May 2025" data-cert-w="698" data-cert-h="539" aria-label="View certificate">
+          <img src="images/certificates/duke-data-science-math-skills-2025.webp" alt="Data Science Math Skills certificate, issued May 2025" loading="lazy" width="698" height="539">
+        </button>
+        <div class="credential-body">
+          <h3>Data Science Math Skills</h3>
+          <p class="credential-meta">Duke University &middot; May 2025</p>
+          <div class="credential-actions">
+            <a href="https://www.coursera.org/account/accomplishments/verify/9LJ571Z5IVRI" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credential-card">
+        <button type="button" class="credential-image credential-view-btn" data-cert-src="images/certificates/nasa-open-science-101-2024.webp" data-cert-alt="NASA Open Science 101 certificate, issued September 2024" data-cert-w="1400" data-cert-h="1082" aria-label="View certificate">
+          <img src="images/certificates/nasa-open-science-101-2024.webp" alt="NASA Open Science 101 certificate, issued September 2024" loading="lazy" width="1400" height="1082">
+        </button>
+        <div class="credential-body">
+          <h3>NASA Open Science 101</h3>
+          <p class="credential-meta">NASA &middot; Sep 2024</p>
+          <div class="credential-actions">
+            <a href="https://www.credly.com/badges/ff8bdcb9-1399-40e7-b22b-205da15491b8" target="_blank" rel="noopener noreferrer" class="credential-verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Certificate Lightbox (shared by Certifications & Honors) -->
+<dialog id="cert-lightbox" class="cert-lightbox">
+  <div class="cert-lightbox-inner">
+    <button type="button" class="cert-lightbox-close" aria-label="Close certificate viewer">&times;</button>
+    <img id="cert-lightbox-img" src="" alt="" loading="lazy">
+  </div>
+</dialog>
 
 <!-- problem-solving -->
 <section class="problem-solving-section" id="problem-solving">

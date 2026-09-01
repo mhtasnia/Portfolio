@@ -151,7 +151,7 @@ class Footer extends HTMLElement {
             <div class="footer-container">
                 <div class="footer-section footer-about">
                     <h3>About Me</h3>
-                    <p>I'm a Software Engineering student passionate about creating innovative solutions. I specialize in web development, machine learning, and competitive programming.</p>
+                    <p>Software Engineering graduate, IEEE-published in computer vision, building on AWS and Google Cloud.</p>
                     <div class="social-icons">
                         <a href="https://github.com/mhtasnia" target="_blank" rel="noopener">
                             <i class="fab fa-github"></i>
@@ -159,32 +159,37 @@ class Footer extends HTMLElement {
                         <a href="https://www.linkedin.com/in/meherose-hossain-tasnia-763074266/" target="_blank" rel="noopener">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:tasnia22205341191@diu.edu.bd">
+                        <a href="https://orcid.org/0009-0008-1533-0594" target="_blank" rel="noopener">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                        <a href="mailto:mhtasnia@gmail.com">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="#research"><i class="fas fa-chevron-right"></i> Research</a></li>
                         <li><a href="#tech-stack"><i class="fas fa-chevron-right"></i> Tech Stack</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
                         <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
                         <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
                         <li><a href="#leadership"><i class="fas fa-chevron-right"></i> Leadership</a></li>
-                        <li><a href="#achievements"><i class="fas fa-chevron-right"></i> Achievements</a></li>
+                        <li><a href="#achievements"><i class="fas fa-chevron-right"></i> Honors &amp; Awards</a></li>
                         <li><a href="#certifications"><i class="fas fa-chevron-right"></i> Certifications</a></li>
                         <li><a href="#problem-solving"><i class="fas fa-chevron-right"></i> Problem Solving</a></li>
-                        <li><a href="./documents/Cv_v2.pdf" target="_blank" rel="noopener"><i class="fas fa-chevron-right"></i> Download CV</a></li>
+                        <li><a href="./documents/tasnia_ml_resume.pdf" target="_blank" rel="noopener"><i class="fas fa-chevron-right"></i> Download CV</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section footer-contact">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Daffodil International University, Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-phone"></i> +880 1838 602697</p>
-                    <p><i class="fas fa-envelope"></i> tasnia22205341191@diu.edu.bd</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-envelope"></i> mhtasnia@gmail.com</p>
+                    <p><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/meherose-hossain-tasnia-763074266/" target="_blank" rel="noopener" style="color: #ddd;">LinkedIn</a></p>
                 </div>
             </div>
             

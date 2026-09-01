@@ -187,11 +187,13 @@ class Header extends HTMLElement {
           </div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#achievements">Honors</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#problem-solving">Problem Solving</a></li>
           </ul>

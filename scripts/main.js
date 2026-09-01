@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dynamic Text Typing Effect
     const dynamicTextElement = document.querySelector('.banner-subtext');
     if (dynamicTextElement) {
-        const texts = ["A Software Engineer", "A Web Developer", "A Problem Solver", "A Machine Learning Enthusiast"];
+        const texts = ["Software Engineering graduate", "IEEE-published in computer vision", "Building on AWS and Google Cloud"];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -108,6 +108,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Certificate lightbox
+    const certDialog = document.getElementById('cert-lightbox');
+    const certImg = document.getElementById('cert-lightbox-img');
+    const certCloseBtn = certDialog ? certDialog.querySelector('.cert-lightbox-close') : null;
+    let certLastTrigger = null;
+
+    if (certDialog && certImg && certCloseBtn) {
+        let certClosed = false;
+
+        function closeCertLightbox() {
+            if (certClosed) return;
+            certClosed = true;
+            certDialog.close();
+            certImg.src = '';
+            if (certLastTrigger) certLastTrigger.focus({ preventScroll: true });
+        }
+
+        document.querySelectorAll('.credential-view-btn, .credential-view-link').forEach(btn => {
+            btn.addEventListener('click', () => {
+                certLastTrigger = btn;
+                certClosed = false;
+                certImg.src = btn.dataset.certSrc;
+                certImg.alt = btn.dataset.certAlt;
+                certImg.width = btn.dataset.certW;
+                certImg.height = btn.dataset.certH;
+                certDialog.showModal();
+            });
+        });
+
+        certCloseBtn.addEventListener('click', closeCertLightbox);
+
+        certDialog.addEventListener('click', (e) => {
+            if (e.target === certDialog) {
+                closeCertLightbox();
+            }
+        });
+
+        // Catch-all for the native Esc-key close path, which bypasses the handlers above.
+        certDialog.addEventListener('close', closeCertLightbox);
+    }
+
     // Chatbot functionality
     const chatInput = document.getElementById('chat-input');
     const sendChatBtn = document.getElementById('send-chat-btn');
@@ -150,16 +191,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'Hello there! How can I assist you today?';
             } else if (lowerCaseMessage.includes('name')) {
                 return 'I am MeheroseAI, a chatbot designed to answer questions about this portfolio.';
+            } else if (lowerCaseMessage.includes('research') || lowerCaseMessage.includes('paper') || lowerCaseMessage.includes('publication')) {
+                return 'Meherose is the first author of "MSRA-Net", a paper on attention-based CNNs for diabetic retinopathy classification, published at IEEE EICT 2025. See the Research & Publications section for details.';
             } else if (lowerCaseMessage.includes('skills') || lowerCaseMessage.includes('tech stack')) {
-                return 'Meherose is proficient in Python, HTML, CSS, JavaScript, C++, Java, React, Bootstrap, Spring Boot, Django, and Tailwind CSS.';
+                return 'Meherose specializes in ML & deep learning (TensorFlow, Keras, PyTorch), generative AI & cloud (Amazon Bedrock, AWS Lambda), and full-stack development (Python, React, Django REST, FastAPI). See the Skills section for the full breakdown.';
             } else if (lowerCaseMessage.includes('projects')) {
-                return 'Meherose has worked on projects like "Borrow&Read" (web app), "Bus Management System" (desktop app), and "Space Invaders" (game). You can find more details in the Projects section.';
+                return 'Meherose has worked on projects like "Mtuber" (CNN-based defect detection), a "Customer Support Chatbot" built on Amazon Bedrock Flows, "Daycare Connect", and "EduSphere". You can find more details in the Projects section.';
             } else if (lowerCaseMessage.includes('education')) {
-                return 'Meherose is pursuing a Bachelor of Science in Software Engineering at Daffodil International University.';
+                return 'Meherose holds a Bachelor of Science in Software Engineering from Daffodil International University (2022–2026), graduating with a CGPA of 3.97/4.00.';
             } else if (lowerCaseMessage.includes('experience')) {
-                return 'Meherose has experience as a Software Engineer Intern at Tech Solutions Inc. and as a Research Assistant at University of XYZ - AI Lab.';
+                return 'Meherose led a team through the NASA Space Apps Challenge 2024, apprenticed at Geeky Solutions through Learnathon 3.0, trained students at the DIU Software Engineering Club, and took part in the World Friends Korea IT Volunteer Programme.';
             } else if (lowerCaseMessage.includes('contact')) {
-                return 'You can reach Meherose via email at tasnia22205341191@diu.edu.bd or connect on LinkedIn and GitHub. The social media links are available in the footer.';
+                return 'You can reach Meherose via email at mhtasnia@gmail.com or connect on LinkedIn and GitHub. The social media links are available in the footer.';
             } else if (lowerCaseMessage.includes('cv') || lowerCaseMessage.includes('resume')) {
                 return "You can view Meherose's CV by clicking the \"View CV\" button in the About Me section.";
             } else if (lowerCaseMessage.includes('thank you') || lowerCaseMessage.includes('thanks')) {
