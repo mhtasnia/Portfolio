@@ -24,9 +24,3 @@ I’ve structured the header and footer using JavaScript objects to create modul
 
 The skill slider component in this portfolio provides an automated and dynamic visual representation of my proficiency in various technologies. It leverages JavaScript arrays and loops to generate interactive sliders that reflect skill levels.
 I've developed it using array and iteration of loops
-
-
-## 🚀 Live Demo
-
-You can view the live demo of my portfolio here: [https://portfolio-iota-ivory-52-git-f-935cc0-meherose-hossains-projects.vercel.app/]
-
